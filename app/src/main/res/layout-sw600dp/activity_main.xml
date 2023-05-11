@@ -14,32 +14,39 @@
         android:layout_height="match_parent"
         android:orientation="vertical"
         android:padding="32dp"
+        android:gravity="center_vertical"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/show_count"
+        app:layout_constraintHorizontal_bias="0.5"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent">
 
         <Button
             android:id="@+id/button_count"
-            android:layout_width="wrap_content"
+            android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:backgroundTint="@color/purple_700"
             android:text="@string/count"
-            android:textColor="@color/white" />
+            android:textColor="@color/white"
+            android:textSize="32sp"/>
 
         <Button
             android:id="@+id/button_zero"
-            android:layout_width="wrap_content"
+            android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:backgroundTint="@color/gray"
             android:text="@string/zero"
-            android:textColor="@color/white" />
+            android:textColor="@color/white"
+            android:textSize="32sp"/>
 
         <Button
             android:id="@+id/button_toast"
-            android:layout_width="wrap_content"
+            android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:backgroundTint="@color/purple_200"
             android:text="@string/toast"
-            android:textColor="@color/black" />
+            android:textColor="@color/black"
+            android:textSize="32sp"/>
     </LinearLayout>
 
     <TextView
@@ -54,11 +61,11 @@
         android:textColor="@color/purple_500"
         android:textSize="160sp"
         android:textStyle="bold"
-        android:layout_marginEnd="16dp"
+        android:layout_margin="32dp"
+        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toEndOf="@+id/linearLayout"
         app:layout_constraintTop_toTopOf="parent" />
-
 
     <Button
         android:id="@+id/btn_next_lesson"
@@ -78,26 +85,6 @@
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="@+id/linearLayout"
-        app:layout_constraintTop_toBottomOf="@+id/btn_next_lesson" />
-
-    <Button
-        android:id="@+id/button_next_lesson_saved_instance_state"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="@string/next_lesson_savedinstancestate"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/btn_next_lesson_intent" />
-
-    <Button
-        android:id="@+id/next_lesson_implicit_intents"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="@string/next_lesson_implict_intents"
-        app:layout_constraintBottom_toTopOf="@+id/btn_next_lesson_intent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/btn_next_lesson" />
 
 
